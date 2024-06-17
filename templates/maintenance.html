@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ url_for('static', filename='logo3new.jpg') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styleupdate.css') }}">
+    <title>Maintenance</title>
+    <style>
+        body {
+            background-image: url({{ url_for('static', filename='mainpageback.jpg') }}); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+            background-size: cover; 
+            background-position: top; 
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <nav>
+            <img src="{{ url_for('static', filename='headlogo.png') }}">
+            <h1 class="on">DECCAN ENCLAVE</h1>
+        </nav>
+    </div>
+    <hr>
+    <h1 class="ma">Maintenance</h1>
+    <form method="post">
+        <label for="block">Enter Block Number:</label>
+        <input type="number" id="block" name="block" required>
+        <br><br>
+        <label for="house">Payment Status:</label>
+        <input type="number" id="house" name="house" required>
+        <br><br>
+        <input class="but" type="submit" value="Submit">
+    </form>
+    {% if result %}
+        <table border="1">
+            <tr class="rowww">
+                <th>Block</th>
+                <th>House</th>
+                <th>Maintenance Status</th>
+            </tr>
+            {% for item in result %}
+            <tr>
+                <td>{{ item[0] }}</td>
+                <td>{{ item[1] }}</td>
+                <td>{{ item[2] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+</body>
+</html>
+            

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Check{% endblock %}
+
+{% block content %}
+<a class="pre" href="maintainance.html">Previous Page</a>
+<hr>
+<div class="mid">
+    <form>
+        <table>
+            <tr>
+                <td>BLOCK</td><td>HOUSE</td><td>BHK</td><td>OCCUPANCY</td><td>OCCUPANT</td><td>PHONE NUMBER</td><td>MAINTAINANCE STATUS</td>
+            </tr>
+            <tr>
+                <td>1</td><td>1</td><td>2</td><td><select><option>OCCUPIED</option><option>VACANT</option></select></td><td><input type="text" value=""></td><td><input type="number" value=""></td><td><select><option>YES</option><option>NO</option></select></td>
+            </tr>
+            <tr>
+                <td>1</td><td>2</td><td>2</td><td><select><option>OCCUPIED</option><option>VACANT</option></select></td><td><input type="text" value=""></td><td><input type="number" value=""></td><td><select><option>YES</option><option>NO</option></select></td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </table>
+    </form>
+</div>
+{% endblock %}
+
+        

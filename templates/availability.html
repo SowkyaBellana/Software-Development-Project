@@ -1,0 +1,67 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ url_for('static', filename='logo3new.jpg') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styleupdate.css') }}">
+
+
+    <title>House Availability</title>
+    <style>
+        body {
+            background-image: url({{ url_for('static', filename='mainpageback.jpg') }}); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+            background-size: cover; 
+            background-position: top; 
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <nav>
+            <img src="{{ url_for('static', filename='headlogo.png') }}">
+            <h1 class="on">DECCAN ENCLAVE</h1>
+        </nav>
+    </div>
+    <hr>
+    <h1 class="hou">House Availability</h1>
+    <form method="post">
+        <label for="bhk">Enter BHK (2/3):</label>
+        <input type="number" id="bhk" name="bhk" required>
+        <br><br>
+        <input class="but" type="submit" value="Submit">
+    </form>
+    {% if result %}
+        <h2 class="re">Results:</h2>
+        {% if result == "No vacant houses found for the given BHK value" %}
+            <p>{{ result }}</p>
+        {% else %}
+            <table border="1">
+                <thead>
+                    <tr class="b">
+                        <th>Block</th>
+                        <th>House</th>
+                        <th>BHK</th>
+                        <th>Occupancy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for house in result %}
+                        <tr>
+                            <td>{{ house[0] }}</td>
+                            <td>{{ house[1] }}</td>
+                            <td>{{ house[2] }}</td>
+                            <td>{{ house[3] }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% endif %}
+    {% endif %}
+</body>
+</html>
+
+    

@@ -1,0 +1,92 @@
+.three{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 300;
+    color: grey;
+}
+.on{
+    color: lightgrey;
+    font-family: sans-serif;
+    background-color: rgba(red, green, blue, alpha);
+    font-weight: 700;
+    font-size: 40px;
+    color: #445;
+
+}
+.ma{
+    font-family: sans-serif;
+    color:grey;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 300;
+}
+.hou{
+    font-family: sans-serif;
+    color:grey;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 300;
+
+}
+.re{
+    text-align: center;
+    color: grey;
+    font-family: sans-serif;
+
+}
+img{
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+}
+.head,.on{
+    display: inline-block;
+}
+form{
+    text-align: center;
+    font-size: x-large;
+    font-family: sans-serif;
+    margin-top: 70px;
+}
+.but{
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100px;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.but {
+    background-color: #0074D9;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.but:hover {
+    background-color: #0056b3;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    text-align: center;
+    margin-left: 27%;
+    padding: 10px;
+    
+}
+  
+td, td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 10px;
+    border-color: black;
+}
+.rowww{
+    background-color:#4CAF50 ;
+    font-family: sans-serif;
+    font-weight: 300;
+    padding: 10px;
+}
+.b{
+    background-color: #4CAF50;
+}

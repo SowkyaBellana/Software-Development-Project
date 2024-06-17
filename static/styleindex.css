@@ -1,0 +1,185 @@
+.on{
+  font-family: sans-serif;
+  background-color: rgba(red, green, blue, alpha);
+  font-weight: 700;
+  font-size: 40px;
+  color:#445;
+  margin-bottom: 10px;
+
+}
+img{
+  width: 45px;
+  height: 45px;
+  margin-top: 10px;
+}
+.on,img{
+  display: inline-block;
+}
+.one{
+    margin-top: 10px;
+}
+.wel{
+  font-family: sans-serif;
+  font-size: xx-large;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 40px;
+  color: gray;
+
+}
+.wel:hover{
+  color: lightgrey;
+}
+
+
+.header,.one{
+    display: inline-block;
+    padding: 10px;
+}
+ul,.loc{
+    display: inline-block;
+}
+ul{
+    margin-left: 700px;
+    padding: 0%;
+}
+a{
+    padding: 15px;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+ul,.Login{
+    margin-left: 930px;
+}
+.dash{
+    font-family: sans-serif;
+    color: #444455;
+    background-color:transparent;
+    backdrop-filter: blur(3px);
+    padding: 120px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    font-size:35px;
+    
+
+}
+.dash:hover{
+    background-color:whitesmoke;
+}
+.maintain{
+    font-family: sans-serif;
+    color:#444455;
+    background-color:transparent;
+    backdrop-filter: blur(3px);
+    padding: 120px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    font-size: 35px;
+
+}
+.maintain:hover{
+    background-color:whitesmoke;
+}
+.que{
+    font-family: sans-serif;
+    color:#444455;
+    background-color:transparent;
+    backdrop-filter: blur(3px);
+    padding: 120px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    font-size: 35px;
+
+}
+.que:hover{
+    background-color:whitesmoke;}
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+    margin-top: 7%;
+    margin-left: 6%;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .avail{
+    font-family: sans-serif;
+    color:#444455;
+    background-color:transparent;
+    backdrop-filter: blur(3px);
+    padding: 120px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    font-size: 35px;
+
+  }
+  .avail:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+  }
+  .update{
+    font-family: sans-serif;
+    color:#444455;
+    background-color:transparent;
+    backdrop-filter: blur(3px);
+    padding: 120px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    font-size: 35px;
+
+  }
+  .update:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+  }
+  .column1 {
+    float: left;
+    width: 33.33%;
+    padding: 8px;
+    margin-top: 3%;
+    margin-left: 13%;
+  }
+  
+  .row1::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  body{
+    background-size: auto;
+
+  }
+  a{
+    text-decoration: none;
+  }
+  .dash,.que,.maintain,.avail,.update{
+    transition: 0.5s;
+}
+.update:hover{
+    transform: scale(1.041);
+    transition: 0.5s;}
+.dash:hover{
+      transform: scale(1.045);
+      transition: 0.5s;}
+.que:hover{
+        transform: scale(1.045);
+        transition: 0.5s;}
+.maintain:hover{
+          transform: scale(1.045);
+          transition: 0.5s;}
+.avail:hover{
+            transform: scale(1.041);
+            transition: 0.5s;
+          }
+                      

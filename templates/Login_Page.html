@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="../static/logo3new.jpg">
+        <link rel="stylesheet" href="../static/stylelogin.css">
+    </head>
+    <body style="background-image: url(../static/backlogin4.png) ;">
+        <div class="header">
+            <nav>
+
+                <img src="../static/headlogo.png">
+                <h1 class="one">DECCAN ENCLAVE</h1>                
+            </nav>
+        </div>   
+        <hr>        
+        <div class="main">
+            <nav>
+                <img src="../static/headlogo.png" class="../static/loginlogo.png">
+                <h3>Sign in</h3>
+                <form action="{{url_for('login')}}" method = "post">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="text" placeholder="Name" class="six" id="username" name = "username">
+                            </td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                            <td>
+                                <input type="password" placeholder="Password" class="nine" id="username" name = "pass">
+                            </td>
+                        </tr>
+                    </table>
+                    <button type = "submit" class="loogin" href="{{url_for('login')}}">Login</button>
+                </form>
+                <p id = "message">{{Message}}</p>
+            </nav>
+            
+        </div>
+        
+    </body>
+</html>

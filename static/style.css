@@ -1,0 +1,108 @@
+/* General Styles */
+
+.on{
+    color: lightgrey;
+    font-family: sans-serif;
+    background-color: rgba(red, green, blue, alpha);
+    font-weight: 700;
+    font-size: 40px;
+    color: #445;
+
+}
+img{
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+}
+label{
+    font-family: sans-serif;
+}
+h2{
+    font-family: sans-serif;
+    color: lightgrey;
+}
+
+.head,.on{
+    display: inline-block;
+}
+.two{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: x-large;
+    text-align: center;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+body {
+    background-image: url('static\mainpageback.jpg');  
+}    
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"],
+button {
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #0074D9;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+:placeholder-shown{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* Results Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+table:hover{
+    transform: scale(1.045);
+    transition: 0.5s;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    input[type="number"],
+    button {
+        width: 100%;
+    }
+}

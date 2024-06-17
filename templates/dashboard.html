@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="logo3new.jpg">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="styledash.css">
+        <style>
+          body {
+              background-image: url({{ url_for('static', filename='mainpageback.jpg') }}); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+              background-size: cover; 
+              background-position: top; 
+          }
+      </style>
+    </head>
+    <body style="background: url({{ url_for('static', filename='mainpageback.jpg') }}); ">
+        <div class="head">
+            <nav>
+                <img src="../static/headlogo.png">
+                <h1 class="on">DECCAN ENCLAVE</h1>
+            </nav>
+        </div>
+        <hr>
+        <div class="row1">
+            <div class="column1">
+                <a class="block" href="{{ url_for('blockwise') }}">BLOCK WISE LIST</a>
+            </div>
+            <div class="column1">
+                <a class="details" href="{{ url_for('details') }}">DETAILS</a>
+            </div>
+        </div>            
+    </body>
+    <style>
+        .on{
+            font-family:sans-serif;
+            background-color: rgba(red, green, blue, alpha);
+            font-weight: 700;
+            font-size: 40px;
+            color:#445;
+        }
+        
+        img{
+            width: 45px;
+            height: 45px;
+            margin-top: 10px;
+        }
+        .head,.on{
+            display: inline-block;
+        
+        }
+        .column1 {
+            float: left;
+            width: 33.33%;
+            padding: 8px;
+            margin-top: 18%;
+            margin-left: 13%;
+          }
+          
+          .row1::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+          .block{
+            font-family: sans-serif;
+            color:#444455;
+            background-color:transparent;
+            backdrop-filter: blur(3px);
+            padding: 120px;
+            border: none;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 5px;
+            font-size: 35px;
+        
+          }
+          .block:hover{
+            background-color: whitesmoke;
+            cursor: pointer;
+          }
+          .details{
+            font-family: sans-serif;
+            color:#444455;
+            background-color:transparent;
+            backdrop-filter: blur(3px);
+            padding: 120px;
+            border: none;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 5px;
+            font-size: 35px;
+        
+          }
+          .details:hover{
+            background-color: whitesmoke;
+            cursor: pointer;
+          }
+          a{
+            text-decoration: none;
+          }
+         
+        
+    </style>
+</html>

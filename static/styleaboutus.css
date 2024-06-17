@@ -1,0 +1,120 @@
+.on{
+    font-family:sans-serif;
+    background: linear-gradient(90deg,#00ffff,#ff00c3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+img{
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+   
+}
+.head,.on{
+    display: inline-block;
+
+}
+
+.abou{
+    font-family: sans-serif;
+    font-size: 35px;
+    color: grey;
+    margin-left: 45%;
+}
+.gin{
+    background-color:#0074D9;
+    color: #ffffff;
+    padding: 20px 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 950px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.gin:hover{
+    background-color:#0056b3;
+}
+.loc:hover{
+    color: grey;
+}
+.loc{
+    font-size: x-large;
+    margin-left: 20px;
+}
+.abou{
+    font-family: sans-serif;
+    font-size: 35px;
+    color: grey;
+    margin-left: 45%;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    
+}
+.appartimg{
+    width: 620px;
+    height: 620px;
+    margin-left: 25%;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+h2{
+    font-family: sans-serif;
+    color: #404040;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    margin-left: 70px;
+    margin-top: 50px;
+    font-size:26px;
+}
+.column {
+    float: left;
+    width: 43%;
+    padding: 5px;
+}
+  
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.con{
+    background-color: #092D35;
+    margin-top: 90px;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 300px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+.appartimg{
+    transition: 0.5s;
+}
+.appartimg:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.045);
+}
+h2{
+    transition: 0.5s;
+}
+h2:hover{
+    transform: scale(1.045);
+    transition: 0.5s;
+}
+a{
+    text-decoration: none;
+  }
+  
+  

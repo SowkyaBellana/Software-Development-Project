@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartment Update</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styleupdate.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='logo3new.jpg') }}">
+    <style>
+        body {
+            background-image: url({{ url_for('static', filename='mainpageback.jpg') }}); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+            background-size: cover; 
+            background-position: top; 
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="head">
+        <nav>
+            <img src="{{ url_for('static', filename='headlogo.png') }}">
+            <h1 class="on">DECCAN ENCLAVE</h1>
+        </nav>
+    </div>
+    <hr>
+    <h1 class="three">Update Apartment Occupancy</h1>
+    <form action="{{ url_for('updation') }}" method="post">
+        <label for="block">Block:</label>
+        <input type="text" id="block" name="block" required><br><br>
+        <label for="house">House:</label>
+        <input type="text" id="house" name="house" required><br><br>
+        <label for="occ"> Status:</label>
+        <input type="text" id="occ" name="occ" required><br><br>
+        <input class="but" type="submit" value="Update">
+    </form>
+    <br>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+</body>
+</html>

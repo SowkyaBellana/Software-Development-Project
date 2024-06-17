@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockwise List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='logo3new.jpg') }}">
+    <style>
+        body {
+            background-image: url({{ url_for('static', filename='mainpageback.jpg') }}); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+            background-size: cover; 
+            background-position: top; 
+        }
+    </style>
+    
+</head>
+<body >
+    <div class="head">
+        <nav>
+            <img src="{{ url_for('static', filename='headlogo.png') }}">
+            <h1 class="on">DECCAN ENCLAVE</h1>
+        </nav>
+    </div>
+    <hr>
+    <div class="container">
+        <h1 class="two" >Blockwise List</h1>
+        <form action="{{ url_for('blockwise') }}" method="get">
+        
+            <label for="block"></label>
+            <input type="number" id="block" name="block" placeholder="Enter Block Number Here ">
+            <button type="submit">Submit</button>
+        </form>
+        {% if result %}
+            <h2>Results:</h2>
+            {% if result is string %}
+                <p>{{ result }}</p>
+            {% else %}
+                <table>
+                    <tr>
+                        <th>Block</th>
+                        <th>House</th>
+                        <th>BHK</th>
+                        <th>Occupancy</th>
+                        <th>Owner name</th>
+                        <th>Phone number</th>
+                        <th>Maintenance status</th>
+                    </tr>
+                    {% for item in result %}
+                        <tr>
+                            <td>{{ item[0] }}</td>
+                            <td>{{ item[1] }}</td>
+                            <td>{{ item[2] }}</td>
+                            <td>{{ item[3] }}</td>
+                            <td>{{ item[4] }}</td>
+                            <td>{{ item[5] }}</td>
+                            <td>{{ item[6] }}</td> 
+                        </tr>
+                    {% endfor %}
+                </table>
+            {% endif %}
+        {% endif %}
+     
+    </div>
+</body>
+</html>
+

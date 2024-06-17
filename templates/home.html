@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartment Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styleindex.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='logo3new.jpg') }}">
+    <style>
+        body {
+            background-image: url({{ url_for('static', filename='mainpageback.jpg') }}); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+            background-size: cover; 
+            background-position: top; 
+        }
+    </style>
+
+</head>
+<body>
+    <div class="head">
+        <nav>
+            <img src="{{ url_for('static', filename='headlogo.png') }}">
+            <h1 class="on">DECCAN ENCLAVE</h1>
+        </nav>
+    </div>
+    <hr>
+    <div class="container">
+        <h1 class="wel">Welcome to Apartment Management System</h1>
+        <div class="row">
+            <div class="column" style="display: flex;">
+                <a class="dash" href="{{ url_for('dashboard') }}">
+                    DASHBOARD
+                </a>
+            </div>
+            <div class="column" style="display: flex;">
+                <a class="que" href="{{ url_for('queries') }}">QUERIES</a>
+            </div>
+            <div class="column" style="display: flex;">
+                <a class="maintain" href="{{ url_for('availability') }}">
+                    AVAILABILITY
+                </a>
+            </div>
+        </div>
+        <div class="row1">
+            <div class="column1" style="display: flex;">
+                <a class="avail" href="{{ url_for('maintenance') }}">MAINTENANCE</a>
+            </div>
+            <div class="column1" style="display: flex;">
+                <a class="update" href="{{ url_for('updation') }}">UPDATION</a>
+            </div>
+            
+
+           
+            
+        </div>
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
