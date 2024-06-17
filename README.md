@@ -1,1 +1,1 @@
-# Software-Development-Project
+The task assigned to our team was to develop an Apartment Management System using the data structures covered in our course, with Python as the primary language. Our team of four successfully implemented the project by leveraging Binary Trees and singly linked list as the core data structure. The front-end was developed using HTML and CSS, and integration was achieved through Flask.
